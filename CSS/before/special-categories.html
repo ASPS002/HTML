@@ -60,7 +60,7 @@
                     <!--collsapsable nav id is for button to target and others are required as per bootstrap documentation-->
                     <ul id="nav-list" class="nav navbar-nav navbar-right">
                         <!--every class is required for proper navigation element-- and navbar-right for placing right-->
-                        <li class="visible-xs active">
+                        <li class="visible-xs ">
                             <a href="index.html">
                                 <span class="glyphicon glyphicon-home"></span>
                                 <!--these classes are able to bring icon font(image that behave same as fonts)-->
@@ -68,7 +68,7 @@
                             </a>
                             <!--br==break which changes the gap between icon and writing and puts the horizontal when screen is extra small -->
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="menu-categories.html">
                                 <span class="glyphicon glyphicon-cutlery"></span>
                                 <!--these classes are able to bring icon font(image that behave same as fonts)-->
@@ -113,30 +113,110 @@
     </div>
     <div id="xs-deliever" class="text-center visible-xs">*We Deliever</div>
     <div id="main content" class="container">
-        <div class="jumbotron">
-            <img src='images/jumbotron_768.jpg' alt="picture of restaurant" class="img-responsive visible-xs">
-        </div>
-        <div id="home-tiles" class="row">
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <a href="menu-categories.html">
-                    <div id="menu-tile"><span>menu</span></div>
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <a href="special-categories.html">
-                    <div id="specials-tile"><span>specials</span></div>
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-12 col-xs-12">
-                <a href="https://goo.gl/maps/9UzhvKUsPsEVKmD79" target="blank">
-                    <div id="map-tile"><iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3084.6752464053484!2d-76.71387678478263!3d39.363590279501416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c81a14e7817803%3A0xab20a0e99daa17ea!2sDavid%20Chu&#39;s%20China%20Bistro!5e0!3m2!1sen!2sin!4v1633478441103!5m2!1sen!2sin"
-                            width="100%" height="250" style="border:0;" allowfullscreen=""
-                            loading="lazy"></iframe><span>map</span></div>
-                </a>
-            </div>
-        </div>
+       <h2 id="menu-categories-title" class="text-center">Lunch Menu</h2>
+        <div class="text-center">Lunch is not served until after 1pm</div>
         <!--end of home-tiles-->
+        <section class="row">
+            <div class="menu-item-tile col-md-6">
+             <div class="row">
+                 <div class="col-sm-5">
+                     <div class="menu-item-photo">
+                         <div>D01</div>
+                         <img class="img-responsive" width="250" height="150" src="images/menu/B/B-1.jpg" alt="Item">
+                     </div>
+                     <div class="menu-item-price">$10.95<span>(pint)</span>$14.95<span>(quart)</span></div>
+                 </div>
+                 <div class="menu-item-description col-sm-7">
+                     <h3 class="menu-item-title">Veal with mixed Vegetables</h3>
+                     <p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.</p>
+                 </div> 
+             </div>
+             <hr class="visible-xs">
+            </div>
+            <div class="menu-item-tile col-md-6">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="menu-item-photo">
+                            <div>D02</div>
+                            <img class="img-responsive" width="250" height="150" src="images/menu/B/B-1.jpg" alt="Item">
+                        </div>
+                        <div class="menu-item-price">$10.95<span>(pint)</span>$14.95<span>(quart)</span></div>
+                    </div>
+                    <div class="menu-item-description col-sm-7">
+                        <h3 class="menu-item-title">Veal with mixed Vegetables</h3>
+                        <p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.</p>
+                    </div> 
+                </div>
+                <hr class="visible-xs">
+               </div>
+               <div class=" clearfix visible-md-block visible-lg-block "></div><!---to avoid column overflow when more content is written-->
+               <div class="menu-item-tile col-md-6">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="menu-item-photo">
+                            <div>D03</div>
+                            <img class="img-responsive" width="250" height="150" src="images/menu/B/B-1.jpg" alt="Item">
+                        </div>
+                        <div class="menu-item-price">$10.95<span>(pint)</span>$14.95<span>(quart)</span></div>
+                    </div>
+                    <div class="menu-item-description col-sm-7">
+                        <h3 class="menu-item-title">Veal with mixed Vegetables</h3>
+                        <p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.</p>
+                    </div> 
+                </div>
+                <hr class="visible-xs">
+               </div>
+               <div class="menu-item-tile col-md-6">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="menu-item-photo">
+                            <div>D04</div>
+                            <img class="img-responsive" width="250" height="150" src="images/menu/B/B-1.jpg" alt="Item">
+                        </div>
+                        <div class="menu-item-price">$10.95<span>(pint)</span>$14.95<span>(quart)</span></div>
+                    </div>
+                    <div class="menu-item-description col-sm-7">
+                        <h3 class="menu-item-title">Veal with mixed Vegetables</h3>
+                        <p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.</p>
+                    </div> 
+                </div>
+                <hr class="visible-xs">
+               </div>
+               <div class=" clearfix visible-md-block visible-lg-block "></div>
+               <div class="menu-item-tile col-md-6">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="menu-item-photo">
+                            <div>D05</div>
+                            <img class="img-responsive" width="250" height="150" src="images/menu/B/B-1.jpg" alt="Item">
+                        </div>
+                        <div class="menu-item-price">$10.95<span>(pint)</span>$14.95<span>(quart)</span></div>
+                    </div>
+                    <div class="menu-item-description col-sm-7">
+                        <h3 class="menu-item-title">Veal with mixed Vegetables</h3>
+                        <p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.</p>
+                    </div> 
+                </div>
+                <hr class="visible-xs">
+               </div>
+               <div class="menu-item-tile col-md-6">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="menu-item-photo">
+                            <div>D06</div>
+                            <img class="img-responsive" width="250" height="150" src="images/menu/B/B-1.jpg" alt="Item">
+                        </div>
+                        <div class="menu-item-price">$10.95<span>(pint)</span>$14.95<span>(quart)</span></div>
+                    </div>
+                    <div class="menu-item-description col-sm-7">
+                        <h3 class="menu-item-title">Veal with mixed Vegetables</h3>
+                        <p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.</p>
+                    </div> 
+                </div>
+                <hr class="visible-xs">
+               </div>
+               <div class=" clearfix visible-md-block visible-lg-block "></div>
+        </section>
     </div>
     <!--end of main content-->
     <footer class="panel-footer">
